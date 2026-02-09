@@ -1,0 +1,14 @@
+**/node_modules
+**/dist
+**/.env
+**/.env.*
+.DS_Store
+.firebaserc
+.firebase
+firebase-debug.log
+**/.vite
+heal-meet-firebase-adminsdk-fbsvc-1ba53217cb.json
+*.xlsx
+*.xls
+**/*.tsbuildinfo
+Emrooz Clients.xlsx

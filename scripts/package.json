@@ -1,0 +1,16 @@
+{
+  "name": "heal-meat-scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import": "tsx import-excel-to-firestore.ts"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.5.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "~5.4.5"
+  }
+}

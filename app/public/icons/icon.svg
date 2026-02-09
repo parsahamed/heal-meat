@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Heal Meat">
+  <rect width="256" height="256" rx="32" fill="#14532d" />
+  <circle cx="128" cy="112" r="52" fill="#f7f7f2" />
+  <path d="M74 184c18 12 36 18 54 18s36-6 54-18" fill="none" stroke="#f7f7f2" stroke-width="14" stroke-linecap="round" />
+  <circle cx="108" cy="104" r="10" fill="#14532d" />
+  <circle cx="148" cy="104" r="10" fill="#14532d" />
+</svg>
