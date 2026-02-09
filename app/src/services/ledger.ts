@@ -65,7 +65,7 @@ export async function updateLedgerEntry(
   data: Partial<LedgerInput>,
 ) {
   const ref = doc(db, 'clients', clientId, 'ledger', entryId);
-  const payload: Record<string, unknown> = { ...data };
+  const payload: Record<string, any> = { ...data };
   if (data.amount !== undefined) {
     payload.amount = Number(data.amount ?? 0);
   }
