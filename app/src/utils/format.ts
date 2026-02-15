@@ -17,6 +17,27 @@ export function formatDate(date: Date) {
   });
 }
 
+export function formatPersianDate(date: Date) {
+  const formatter = new Intl.DateTimeFormat('en-US-u-ca-persian', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+
+  const parts = formatter.formatToParts(date);
+  const day = parts.find((part) => part.type === 'day')?.value ?? '';
+  const month = parts.find((part) => part.type === 'month')?.value ?? '';
+  const year = parts.find((part) => part.type === 'year')?.value ?? '';
+
+  return `${day} ${month} ${year}`.trim();
+}
+
+export function formatWeekdayShort(date: Date) {
+  return date.toLocaleDateString('en-US', {
+    weekday: 'short',
+  });
+}
+
 export function toDateInputValue(date: Date) {
   return date.toISOString().slice(0, 10);
 }
